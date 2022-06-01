@@ -52,7 +52,7 @@ const Home = () => {
         // logs in on its own
         socket.on('newConnection', () => {
           console.log('a new client just connected!')
-          getOnlineUsers()
+          getOnlineUsers()/* nothing */
         })
         socket.on('message', (messageFromAnotherClient: Message) => {
           // this is for a connected client who receives a message from another user!
